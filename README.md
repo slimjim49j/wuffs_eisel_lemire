@@ -6,6 +6,8 @@ It contains an implementation of the Eisel-Lemire float parsing algorithm.
 
 More info:
 
+https://github.com/google/wuffs
+
 https://nigeltao.github.io/blog/2020/eisel-lemire.html
 
 Usage:
@@ -26,4 +28,5 @@ int main()
  return 0;
 }
 ```
+
 
