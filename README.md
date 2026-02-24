@@ -1,4 +1,4 @@
-# Wuffs Eisel-Lemire Float Parsing Algorithm
+# Wuffs Float Parser
 
 This is a slimmed down version of the `wuffs` library for using the `wuffs_base__parse_number_f64` function.
 
@@ -26,3 +26,4 @@ int main()
  return 0;
 }
 ```
+
