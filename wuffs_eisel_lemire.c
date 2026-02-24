@@ -2228,3 +2228,12 @@ fallback:
     return wuffs_private_impl__high_prec_dec__to_f64(&h, options);
   } while (0);
 }
+
+static int
+wuffs_double_from_str(char *ptr, size_t len, double *d)
+{
+ wuffs_base__slice_u8 slice = {.ptr = (uint8_t *)ptr, .len = len};
+ wuffs_base__result_f64 res = wuffs_base__parse_number_f64(slice, 0);
+ *d = res.value;
+ return wuffs_base__status__is_ok(&res.status);
+}
